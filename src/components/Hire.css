@@ -1,0 +1,103 @@
+.f-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('../assets/webmays.jpg');
+}
+
+.f-form > .f-form-card >form{
+    display: flex;
+    flex-direction: column;
+}
+
+.f-form-card{
+    background: rgb(150, 190, 237);
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 35px #35394430;
+    height: fit-content;
+    padding: 1.5rem;
+    
+}
+
+@media (max-width: 400px) {
+    .f-form-card{
+        width: 16rem;
+    }
+    input[type=form-email]{
+        max-width: 200px;
+    }
+    input[type=form-name]{
+        max-width: 200px;
+    }
+    textarea[type=form-text]{
+        max-width: 200px;
+    }
+}
+
+.f-form-p{
+    justify-content: left;
+    display: flex;
+    font-size: 20px;
+    padding-left: 3.5rem;
+}
+
+.f-form-input{
+    width: 350px;
+    height: 200px;
+}
+
+input[type=form-email]{
+    padding: 0 10px;
+    margin: 0 auto 0 auto;
+    width: 350px;
+    height: 2rem;
+    border: none;
+    border-radius: 5px;
+}
+input[type=form-name]{
+    padding: 1px 10px;
+    margin: 0 auto 0 auto;
+    width: 350px;
+    height: 2rem;
+    border: none;
+    border-radius: 5px;
+}
+textarea[type=form-text]{
+    margin: 0 auto 0 auto;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    resize: none;
+}
+
+.f-form-submit-parent{
+    display: flex;
+    justify-content: center;
+}
+
+.f-form-submit-child{
+    margin-top: 3rem;
+}
+
+.f-form-submit-child[type="submit"]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    line-height: 1.25;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    color: #fff;
+    background-color: #232323;
+    border: none;
+    transition: 0.1s ease-in-out;
+    padding: 0.5rem 1rem;
+}
+
+.f-form-submit-child[type="submit"]:hover{
+    background: #4c4c4c;
+    transition: 0.1s ease-in-out;
+}
